@@ -5,14 +5,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.0.5</version>
+		<version>3.0.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.portafolio</groupId>
-	<artifactId>ndf</artifactId>
+	<artifactId>piloto</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ndf</name>
-	<description>Demo project for Spring Boot</description>
+	<name>piloto</name>
+	<description>piloto cv</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -20,12 +20,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		 <exclusions>
-		  <exclusion>
-		   <groupId>jakarta.persistence</groupId>
-		   <artifactId>jakarta.persistence-api</artifactId>
-		  </exclusion>
-		 </exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -57,10 +51,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	 <dependency>
-	  <groupId>jakarta.persistence</groupId>
-	  <artifactId>jakarta.persistence-api</artifactId>
-	 </dependency>
 	</dependencies>
 
 	<build>
