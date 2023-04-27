@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController //anotacion del spring o controlador
-//@CrossOrigin(origins = "http://localhost:4200") //con que se va a cruzar, o sea, angular
+@RestController 
+//@CrossOrigin(origins = "http://localhost:4200") 
 @CrossOrigin(origins = "https://portfoliondf.web.app")
 
 public class CEstudios {
