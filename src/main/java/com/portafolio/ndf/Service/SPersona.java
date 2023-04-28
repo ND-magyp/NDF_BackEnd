@@ -2,7 +2,7 @@ package com.portafolio.ndf.Service;
 
 import com.portafolio.ndf.Entity.Persona;
 import com.portafolio.ndf.Repository.RPersona;
-import java.util.List;
+//import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -12,21 +12,21 @@ public class SPersona {
     @Autowired
     RPersona rpersona;
 
-    public List<Persona> listarItems() {
-        return rpersona.findAll();
-    }
+    //public List<Persona> listarItems() {
+    //    return rpersona.findAll();
+    //}
 
     public Persona cargarItem(Long id) {
         return rpersona.findById(id).orElse(null);
     }
 
-    public void crearItem(Persona persona) {
-        rpersona.save(persona);
-    }
+    //public void crearItem(Persona persona) {
+    //    rpersona.save(persona);
+    //}
 
-    public void borrarItem(Long id) {
-        rpersona.deleteById(id);
-    }
+    //public void borrarItem(Long id) {
+    //    rpersona.deleteById(id);
+    //}
 
     public void modificarItem(Persona persona) {
         rpersona.save(persona);

@@ -3,10 +3,10 @@ package com.portafolio.ndf.Controller;
 import com.portafolio.ndf.Service.PersonaDTO;
 import com.portafolio.ndf.Entity.Persona;
 import com.portafolio.ndf.Service.SPersona;
-import java.util.List;
+//import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.DeleteMapping;
+//import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -24,24 +24,24 @@ public class CPersona {
     @Autowired
     SPersona spersona;
 
-    @GetMapping("/persona")
-    @ResponseBody
-    public List<Persona> listarItems() {
-        return spersona.listarItems();
-    }
+    // @GetMapping("/persona")
+    // @ResponseBody
+    // public List<Persona> listarItems() {
+    //     return spersona.listarItems();
+    // }
 
-    @PostMapping("/persona")
-    @ResponseBody
-    public String crearItem(@RequestBody Persona persona) {
-        spersona.crearItem(persona);
-        return "Creado correctamente";
-    }
+    // @PostMapping("/persona")
+    // @ResponseBody
+    // public String crearItem(@RequestBody Persona persona) {
+    //    spersona.crearItem(persona);
+    //     return "Creado correctamente";
+    // }
 
-    @DeleteMapping("/persona/{id}")
-    public String borrarExperiencia(@PathVariable Long id) {
-        spersona.borrarItem(id);
-        return "Eliminado correctamente";
-    }
+    // @DeleteMapping("/persona/{id}")
+    // public String borrarExperiencia(@PathVariable Long id) {
+    //     spersona.borrarItem(id);
+    //     return "Eliminado correctamente";
+    // }
 
     @GetMapping("/persona/{id}")
     @ResponseBody
